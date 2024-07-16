@@ -908,3 +908,61 @@ body.dark-mode .footer_menu_list a:hover {
         /* Adjust as needed */
     }
 }
+
+/* Remove underline from email and phone links */
+.contact-info a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Ensure the text color matches the surrounding text */
+}
+
+/* Change the color of the links when hovered */
+.contact-info a:hover {
+    color: var(--color-white);
+    /* Change the link color to white on hover */
+}
+
+/* If you want visited links to maintain visibility */
+.contact-info a:visited {
+    color: inherit;
+    /* Maintain the original color when the link is visited */
+}
+
+.project-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+    text-decoration: none;
+    /* Remove underline from links */
+    color: inherit;
+    /* Ensure text color is inherited */
+}
+
+.project-box:hover::after,
+.contact-info:hover::after {
+    bottom: 0;
+}
+
+.project-box:hover i,
+.project-box:hover h3,
+.project-box:hover label {
+    color: var(--color-white);
+    z-index: 2;
+}
+
+/* Additional style for the <a> tags */
+.project-container a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Ensure the text color matches the surrounding text */
+}
